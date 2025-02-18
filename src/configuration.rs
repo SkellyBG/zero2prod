@@ -3,7 +3,7 @@ pub struct Settings {
     pub database: DatabaseSetting,
     pub application_port: u16,
 }
-#[derive(serde::Deserialize)]
+#[derive(serde::Deserialize, Clone)]
 pub struct DatabaseSetting {
     pub username: String,
     pub password: String,
