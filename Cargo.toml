@@ -11,6 +11,7 @@ path = "src/main.rs"
 name = "zero2prod"
 
 [dependencies]
+tracing = { version = "0.1", features = ["log"] }
 env_logger = "0.9"
 log = "0.4"
 config = "0.14"
