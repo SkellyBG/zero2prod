@@ -10,7 +10,7 @@ use zero2prod::{
 
 #[tokio::main]
 async fn main() -> Result<(), std::io::Error> {
-    let subscriber = get_subscriber("zerotoprod".into(), "info".into());
+    let subscriber = get_subscriber("zerotoprod".into(), "info".into(), std::io::stdout);
     init_subscriber(subscriber);
 
     let configuration = get_configuration().expect("Failed to read configuration.");
